@@ -1,7 +1,7 @@
 export const DIFFICULTLEVEL={
-    'Easy': 1,
-    'Medium': 2,
-    'Hard': 3
+    1: 'Easy',
+    2: 'Medium',
+    3: 'Hard'
 }
 export const QUESTYPE={
     'FreeText': 1,

@@ -4,9 +4,10 @@ import axios from 'axios';
 
 import QuestionList from '../../components/QuestionList/QuestionList';
 import TestReport from '../TestReport/TestReport';
-import * as actionTypes from '../../store/actions'
+import * as actionTypes from '../../store/actions';
 
 import './TestPage.css';
+import { DIFFICULTLEVEL } from '../../localConfig/quesConfig';
 
 
 const TestPage = () =>{
@@ -36,11 +37,13 @@ const TestPage = () =>{
         })
     }, [])
 
-    const nextLevelHandler=()=>{
+    const nextLevelHandler=(e)=>{
+        e.preventDefault();
         sessionStorage.setItem('difficultLevel',JSON.stringify(difficultLevel+1))
         setDifficultLevel(difficultLevel+1)
     }
-    const prevLevelHandler=()=>{
+    const prevLevelHandler=(e)=>{
+        e.preventDefault();
         sessionStorage.setItem('difficultLevel',JSON.stringify(difficultLevel-1))
         setDifficultLevel(difficultLevel-1)
     }
@@ -55,6 +58,7 @@ const TestPage = () =>{
     console.log(selectedQuestions)
     let pageContent = !quesFetchError ? (
         <form className='TestPage'>
+            <h1 style={{textAlign: 'center'}}>{DIFFICULTLEVEL[difficultLevel]}</h1>
         <main>
             {selectedQuestions && <QuestionList questions={selectedQuestions} />}
         </main>

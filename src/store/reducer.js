@@ -2,50 +2,41 @@ import * as actionTypes from './actions';
 
 const initialState={
     questions: [],
-    answerList: []
+    // answerList: []
 }
 
 const reducer =(state=initialState, action)=>{
     switch (action.type){
         case actionTypes.SETQUESTIONS:
-            let answerList=sessionStorage.getItem('answerList') ? (
-                JSON.parse(sessionStorage.getItem('answerList'))) : (
-                action.questions.map(question => ({
-                    question_id: question.id,
-                    question: question.content,
-                    question_type_id: question.question_type_id,
-                    difficulty_level_id: question.difficulty_level_id,
-                    assigned_score: question.assigned_score,
-                    choices: question.choices,
-                    isAnswered: false,
-                    isCorrect: false}))
-                )
-            console.log(answerList)
-            sessionStorage.setItem('answerList',JSON.stringify(answerList)) 
             return{
                 ...state,
                 questions: action.questions,
-                answerList: answerList
+                answers: action.questions
             }
         case actionTypes.UPDATEANSWERS:
-            let updatedAnswerList=state.answerList.map(answer => {
-                if(answer.question_id === action.question_id){
+            let updatedAnswerList=[...state.questions].map(question => {
+                if(question.id === action.question_id){
+                    let isCorrect=false;
+                    question.choices.forEach(element => {
+                        if(element.id === action.answer_id && ((question.question_type_id ===2 && element.selected === true) || (question.question_type_id ===3 && element.content === parseInt(action.provided_answer)))){
+                            isCorrect=true
+                            console.log(isCorrect)
+                        }
+                    });
                     return {
-                        ...answer,
+                        ...question,
                         isAnswered: true,
-                        isCorrect: true,
-                        providedAnswer: action.answer
+                        isCorrect: isCorrect,
+                        providedAnswer: action.provided_answer
                     }
                 }
                 else{
-                    return answer
+                    return question
                 }
             })
-            // console.log(updatedAnswerList)
-            sessionStorage.setItem('answerList',JSON.stringify(updatedAnswerList))
             return{
                 ...state,
-                answerList: updatedAnswerList
+                questions: updatedAnswerList
             }
         default:
             return state
