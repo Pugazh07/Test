@@ -16,6 +16,7 @@ const reducer =(state=initialState, action)=>{
                     question_type_id: question.question_type_id,
                     difficulty_level_id: question.difficulty_level_id,
                     assigned_score: question.assigned_score,
+                    choices: question.choices,
                     isAnswered: false,
                     isCorrect: false}))
                 )
