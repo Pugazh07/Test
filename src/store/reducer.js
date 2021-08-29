@@ -10,8 +10,7 @@ const reducer =(state=initialState, action)=>{
         case actionTypes.SETQUESTIONS:
             return{
                 ...state,
-                questions: action.questions,
-                answers: action.questions
+                questions: action.questions.filter(question => question.active)
             }
         case actionTypes.UPDATEANSWERS:
             let updatedAnswerList=[...state.questions].map(question => {

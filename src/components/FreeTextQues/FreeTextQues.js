@@ -14,7 +14,7 @@ const FreeTextQues = (props) =>{
         provided_answer: answer
     })
     const [textValue, setTextValue]=useState(()=>{
-        return sessionStorage.getItem(props.question.id) ? JSON.parse(sessionStorage.getItem(props.question.id)) : '';
+        return sessionStorage.getItem(props.question.id.toString() + props.question.difficulty_level_id.toString()) ? JSON.parse(sessionStorage.getItem(props.question.id.toString() + props.question.difficulty_level_id.toString())) : '';
     })
     const [error, setError]=useState('')
 
@@ -22,17 +22,16 @@ const FreeTextQues = (props) =>{
         if(props.question.question_type_id === QUESTYPE.FreeTextOnlyNumbers && isNaN(e.target.value)){
             setError("Only numbers are allowed for this answer")
         }
-        else{
-            sessionStorage.setItem(props.question.id, JSON.stringify(e.target.value))
-            updateAnswers(props.question.id, answer_id, e.target.value)
+        else{ 
             setTextValue(e.target.value)
-            updateAnswers(props.question.id, answer_id, e.target.value)
             setError('')
+            updateAnswers(props.question.id, answer_id, e.target.value)
+            sessionStorage.setItem(props.question.id.toString() + props.question.difficulty_level_id.toString(), JSON.stringify(e.target.value))
         }
     }
 
     return <div className='FreeTextQues'>
-        <div key={props.question.id} dangerouslySetInnerHTML={{__html: props.question.content}}/>
+        <div dangerouslySetInnerHTML={{__html: props.question.content}}/>
         <textarea value={textValue} onChange={(e)=>textValueChangeHandler(e,props.question.choices[0].id)}/>
         <p style={{color: 'red'}}>{error}</p>
     </div> ;

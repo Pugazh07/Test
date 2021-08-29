@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import './TestReport.css'
 
 const TestReport =(props)=>{
-    const {questions}=useSelector(state=>{
+    const {questions}= useSelector(state=>{
         console.log(state)
         return{
             questions: state.questions,
@@ -46,7 +46,7 @@ const TestReport =(props)=>{
                             <div style={{color: question.isCorrect ? 'green' : 'red'}}>Your Answer: {question.providedAnswer ? <span dangerouslySetInnerHTML={{__html: question.providedAnswer}}/> : <span style={{fontWeight: 'bold'}}>Not Answered</span>}</div>
                             <div style={{color: 'green'}}>Correct Answer: {question.choices.map(choice => {
                                 if(choice.selected){
-                                    return <span dangerouslySetInnerHTML={{__html: choice.content}}/> 
+                                    return <span key={choice} dangerouslySetInnerHTML={{__html: choice.content}}/> 
                                 }
                             })}</div>
                         </>}

@@ -25,13 +25,13 @@ const SingleChoiceQues =(props) =>{
     }
 
     return<div className='SingleChoiceQues'>
-        <div key={props.question.id} dangerouslySetInnerHTML={{__html: props.question.content}}/>
+        <div dangerouslySetInnerHTML={{__html: props.question.content}}/>
         {props.question.choices.map(choice=>{
             // console.log(choice.id , selectedOption)
-            return <>
+            return <div key={choice.id}>
             <input type='radio' value={choice.content} checked={choice.id === selectedOption} onChange={(e)=>{optionSelectHandler(e,choice.id, choice.content)}}/>
             <span className='Radio' key={choice.id} dangerouslySetInnerHTML={{__html: choice.content}}/>
-            </>
+            </div>
         })}
     </div>
 }

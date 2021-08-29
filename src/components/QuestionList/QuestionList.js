@@ -7,16 +7,15 @@ import SingleChoiceQues from '../SingleChoiceQues/SingleChoiceQues';
 import './QuestionList.css'
 
 const QuestionList=(props)=>{
-    let listQuestions=props.questions.map((question, index)=>{
+    let listQuestions=props.questions.map((question)=>{
         if(question.question_type_id === QUESTYPE.SingleChoice){
-            return <li>
-                <SingleChoiceQues id={question.id} question={question}/>
+            return <li key={question.id.toString() + question.difficulty_level_id.toString()}>
+                <SingleChoiceQues question={question}/>
             </li>
-            
         }
         else{
-            return <li>
-                <FreeTextQues id={question.id} question={question}/>
+            return <li key={question.id.toString()+question.difficulty_level_id.toString()}>
+                <FreeTextQues question={question}/>
             </li>
         }
     })
