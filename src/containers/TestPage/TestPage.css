@@ -1,0 +1,21 @@
+.Navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    border-radius: 5px;
+    width: 120px;
+    height: 60px;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.NextLevel, .PrevLevel{
+    background-color: rgb(43, 58, 192);
+}
+
+.Submit{
+    background-color: rgb(35, 153, 45);
+    color: whitesmoke;
+}

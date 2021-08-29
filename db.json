@@ -1,0 +1,406 @@
+{
+  "questions": [
+    {
+      "id": 50806,
+      "question_type_id": 2,
+      "content": "<p><strong>There are 4 scissors on the green table, 6 scissors on the red table, and 6 scissors on the blue table. How many scissors are there in all?&nbsp;</strong></p><p><br></p>",
+      "difficulty_level_id": 1,
+      "active": true,
+      "assigned_score": 10,
+      "choices": [
+        {
+          "id": 96744,
+          "question_id": 50806,
+          "content": "<p><b id=\"docs-internal-guid-c1f22cf9-7fff-9e03-79c7-1107e1be885a\">10</b></p>\n",
+          "selected": false
+        },
+        {
+          "id": 96745,
+          "question_id": 50806,
+          "content": "<p><meta charset=\"utf-8\" /><b id=\"docs-internal-guid-997f6334-7fff-feb9-7cec-5843d127075d\">12</b></p>\n",
+          "selected": false
+        },
+        {
+          "id": 96746,
+          "question_id": 50806,
+          "content": "<p><meta charset=\"utf-8\" /><b id=\"docs-internal-guid-997f6334-7fff-feb9-7cec-5843d127075d\">16</b></p>\n",
+          "selected": true
+        },
+        {
+          "id": 96747,
+          "question_id": 50806,
+          "content": "<p><meta charset=\"utf-8\" /><b id=\"docs-internal-guid-997f6334-7fff-feb9-7cec-5843d127075d\">14</b></p>\n",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "id": 425656,
+      "question_type_id": 3,
+      "content": "<p><b id=\"docs-internal-guid-45f78bdd-7fff-18dd-f6a7-8a61da7a4eda\">Bob made 15 brushes, William made 15 brushes, and Messi made 3 brushes. </b></p>\n\n<p><meta charset=\"utf-8\" /></p>\n\n<p><b id=\"docs-internal-guid-45f78bdd-7fff-18dd-f6a7-8a61da7a4eda\">The kids have _______ brushes in all. </b></p>\n",
+      "difficulty_level_id": 2,
+      "active": true,
+      "assigned_score": 20,
+      "choices": [
+        {
+          "id": 815274,
+          "question_id": 425656,
+          "content": 33,
+          "selected": true
+        }
+      ]
+    },
+    {
+      "id": 52805,
+      "question_type_id": 2,
+      "content": "<p><strong>Todd has 13 cars, Kathy has 2 cars, and Vincent has 4 cars. How many do they have altogether?</strong></p>",
+      "difficulty_level_id": 1,
+      "active": true,
+      "assigned_score": 20,
+      "choices": [
+        {
+          "id": 967640,
+          "question_id": 52805,
+          "content": "<p><strong>13</strong></p>\n",
+          "selected": false
+        },
+        {
+          "id": 967441,
+          "question_id": 52805,
+          "content": "<p><meta charset=\"utf-8\" /><b id=\"docs-internal-guid-b4b6ac4f-7fff-8a46-024b-063505eef98a\">10</b></p>\n",
+          "selected": false
+        },
+        {
+          "id": 967342,
+          "question_id": 52805,
+          "content": "<p><meta charset=\"utf-8\" /><b id=\"docs-internal-guid-aca5e414-7fff-b1e2-8f5d-34ca8488456c\">19</b></p>\n",
+          "selected": true
+        },
+        {
+          "id": 967243,
+          "question_id": 52805,
+          "content": "<p><meta charset=\"utf-8\" /><b id=\"docs-internal-guid-bec52f48-7fff-dc20-c3ea-f75ca8185372\">17</b></p>\n",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "id": 845656,
+      "question_type_id": 3,
+      "content": "<p><b id=\"docs-internal-guid-45f78bdd-7fff-18dd-f6a7-8a61da7a4eda\">Philiip made 8 snowballs, Christian made 14 snowballs, and Achim made 13 snowballs. </b></p>\n\n<p><meta charset=\"utf-8\" /></p>\n\n<p><b id=\"docs-internal-guid-45f78bdd-7fff-18dd-f6a7-8a61da7a4eda\">The kids have _______ snowballs in all. </b></p>\n",
+      "difficulty_level_id": 2,
+      "active": true,
+      "assigned_score": 20,
+      "choices": [
+        {
+          "id": 885274,
+          "question_id": 845656,
+          "content": 18,
+          "selected": true
+        }
+      ]
+    },
+    {
+      "id": 45631,
+      "question_type_id": 2,
+      "content": "<p><strong>My two brothers and I each got 4 books at the book fair. How many books do we have in all?</strong></p><p><br></p>",
+      "difficulty_level_id": 1,
+      "active": true,
+      "assigned_score": 10,
+      "choices": [
+        {
+          "id": 96732,
+          "question_id": 45631,
+          "content": "<p><strong>4</strong></p>\n",
+          "selected": false
+        },
+        {
+          "id": 96733,
+          "question_id": 45631,
+          "content": "<p><meta charset=\"utf-8\" /><b id=\"docs-internal-guid-f1f9656b-7fff-a2c5-0f51-187b9857bde6\">8</b></p>\n",
+          "selected": false
+        },
+        {
+          "id": 96734,
+          "question_id": 45631,
+          "content": "<p><b>10</b></p>\n",
+          "selected": false
+        },
+        {
+          "id": 96735,
+          "question_id": 45631,
+          "content": "<p><b>12</b></p>\n",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "id": 590806,
+      "question_type_id": 2,
+      "content": "<p><strong>There are 10 caps on the green table, 3 caps on the red table, and 8 caps on the blue table. How many caps are there in all?&nbsp;</strong></p><p><br></p>",
+      "difficulty_level_id": 1,
+      "active": true,
+      "assigned_score": 10,
+      "choices": [
+        {
+          "id": 196744,
+          "question_id": 590806,
+          "content": "<p><b id=\"docs-internal-guid-c1f22cf9-7fff-9e03-79c7-1107e1be885a\">21</b></p>\n",
+          "selected": true
+        },
+        {
+          "id": 196745,
+          "question_id": 590806,
+          "content": "<p><meta charset=\"utf-8\" /><b id=\"docs-internal-guid-997f6334-7fff-feb9-7cec-5843d127075d\">12</b></p>\n",
+          "selected": false
+        },
+        {
+          "id": 196746,
+          "question_id": 590806,
+          "content": "<p><meta charset=\"utf-8\" /><b id=\"docs-internal-guid-997f6334-7fff-feb9-7cec-5843d127075d\">16</b></p>\n",
+          "selected": false
+        },
+        {
+          "id": 196747,
+          "question_id": 590806,
+          "content": "<p><meta charset=\"utf-8\" /><b id=\"docs-internal-guid-997f6334-7fff-feb9-7cec-5843d127075d\">14</b></p>\n",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "id": 456231,
+      "question_type_id": 2,
+      "content": "<p><strong>My two brothers and I each got 3 toys at the toy shop. How many toys do we have in all?</strong></p><p><br></p>",
+      "difficulty_level_id": 3,
+      "active": true,
+      "assigned_score": 30,
+      "choices": [
+        {
+          "id": 296732,
+          "question_id": 456231,
+          "content": "<p><strong>4</strong></p>\n",
+          "selected": false
+        },
+        {
+          "id": 296733,
+          "question_id": 456231,
+          "content": "<p><meta charset=\"utf-8\" /><b id=\"docs-internal-guid-f1f9656b-7fff-a2c5-0f51-187b9857bde6\">8</b></p>\n",
+          "selected": false
+        },
+        {
+          "id": 296734,
+          "question_id": 456231,
+          "content": "<p><b>10</b></p>\n",
+          "selected": false
+        },
+        {
+          "id": 296735,
+          "question_id": 456231,
+          "content": "<p><b>9</b></p>\n",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "id": 45658,
+      "question_type_id": 1,
+      "content": "<p><b id=\"docs-internal-guid-7dd945c3-7fff-544a-5334-5b1ef34eac04\">Rebecca is solving the following problem:</b></p>\n\n<p><meta charset=\"utf-8\" /></p>\n\n<p><b id=\"docs-internal-guid-7dd945c3-7fff-544a-5334-5b1ef34eac04\">I have 7 blue cars, 4 green cars and 1 orange car. How many cars do I have in all?</b></p>\n\n<p dir=\"ltr\"><b id=\"docs-internal-guid-7dd945c3-7fff-544a-5334-5b1ef34eac04\">Rebecca wrote the following equation to help her solve the problem: </b></p>\n\n<p dir=\"ltr\"><b id=\"docs-internal-guid-7dd945c3-7fff-544a-5334-5b1ef34eac04\">7 - 4 - 1 = ?. </b></p>\n\n<p><b id=\"docs-internal-guid-7dd945c3-7fff-544a-5334-5b1ef34eac04\">Is her equation correct? Why or why not?</b></p>\n",
+      "difficulty_level_id": 1,
+      "active": true,
+      "assigned_score": 10,
+      "choices": [
+        {
+          "id": 85279,
+          "question_id": 45658,
+          "content": "Answers will vary. ",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "id": 50805,
+      "question_type_id": 2,
+      "content": "<p><strong>Ryan has 3 cars, Jessica has 10 cars, and April has 4 cars. How many do they have altogether?</strong></p>",
+      "difficulty_level_id": 1,
+      "active": true,
+      "assigned_score": 10,
+      "choices": [
+        {
+          "id": 96740,
+          "question_id": 50805,
+          "content": "<p><strong>13</strong></p>\n",
+          "selected": false
+        },
+        {
+          "id": 96741,
+          "question_id": 50805,
+          "content": "<p><meta charset=\"utf-8\" /><b id=\"docs-internal-guid-b4b6ac4f-7fff-8a46-024b-063505eef98a\">10</b></p>\n",
+          "selected": false
+        },
+        {
+          "id": 96742,
+          "question_id": 50805,
+          "content": "<p><meta charset=\"utf-8\" /><b id=\"docs-internal-guid-aca5e414-7fff-b1e2-8f5d-34ca8488456c\">14</b></p>\n",
+          "selected": false
+        },
+        {
+          "id": 96743,
+          "question_id": 50805,
+          "content": "<p><meta charset=\"utf-8\" /><b id=\"docs-internal-guid-bec52f48-7fff-dc20-c3ea-f75ca8185372\">17</b></p>\n",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "id": 150806,
+      "question_type_id": 2,
+      "content": "<p><strong>There are 14 compass on the green table, 16 compass on the red table, and 6 compass on the blue table. How many compass are there in all?&nbsp;</strong></p><p><br></p>",
+      "difficulty_level_id": 2,
+      "active": false,
+      "assigned_score": 20,
+      "choices": [
+        {
+          "id": 196744,
+          "question_id": 150806,
+          "content": "<p><b id=\"docs-internal-guid-c1f22cf9-7fff-9e03-79c7-1107e1be885a\">20</b></p>\n",
+          "selected": false
+        },
+        {
+          "id": 196745,
+          "question_id": 150806,
+          "content": "<p><meta charset=\"utf-8\" /><b id=\"docs-internal-guid-997f6334-7fff-feb9-7cec-5843d127075d\">22</b></p>\n",
+          "selected": false
+        },
+        {
+          "id": 196746,
+          "question_id": 150806,
+          "content": "<p><meta charset=\"utf-8\" /><b id=\"docs-internal-guid-997f6334-7fff-feb9-7cec-5843d127075d\">36</b></p>\n",
+          "selected": true
+        },
+        {
+          "id": 196747,
+          "question_id": 150806,
+          "content": "<p><meta charset=\"utf-8\" /><b id=\"docs-internal-guid-997f6334-7fff-feb9-7cec-5843d127075d\">24</b></p>\n",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "id": 455223,
+      "question_type_id": 2,
+      "content": "<p><strong>Victor has 12 cars, Tony has 45 cars, and Daniel has 2 cars. How many do they have altogether?</strong></p>",
+      "difficulty_level_id": 3,
+      "active": true,
+      "assigned_score": 30,
+      "choices": [
+        {
+          "id": 455224,
+          "question_id": 455223,
+          "content": "<p><strong>16</strong></p>\n",
+          "selected": true
+        },
+        {
+          "id": 455225,
+          "question_id": 455223,
+          "content": "<p><meta charset=\"utf-8\" /><b id=\"docs-internal-guid-b4b6ac4f-7fff-8a46-024b-063505eef98a\">10</b></p>\n",
+          "selected": false
+        },
+        {
+          "id": 455226,
+          "question_id": 455223,
+          "content": "<p><meta charset=\"utf-8\" /><b id=\"docs-internal-guid-aca5e414-7fff-b1e2-8f5d-34ca8488456c\">14</b></p>\n",
+          "selected": false
+        },
+        {
+          "id": 455227,
+          "question_id": 455223,
+          "content": "<p><meta charset=\"utf-8\" /><b id=\"docs-internal-guid-bec52f48-7fff-dc20-c3ea-f75ca8185372\">17</b></p>\n",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "id": 455234,
+      "question_type_id": 3,
+      "content": "<p><b id=\"docs-internal-guid-45f78bdd-7fff-18dd-f6a7-8a61da7a4eda\">John made 5 cups, Rofel made 9 cups, and Victor made 10 cups. </b></p>\n\n<p><meta charset=\"utf-8\" /></p>\n\n<p><b id=\"docs-internal-guid-45f78bdd-7fff-18dd-f6a7-8a61da7a4eda\">The kids have _______ cups in all. </b></p>\n",
+      "difficulty_level_id": 3,
+      "active": true,
+      "assigned_score": 30,
+      "choices": [
+        {
+          "id": 85214,
+          "question_id": 455234,
+          "content": 24,
+          "selected": true
+        }
+      ]
+    },
+    {
+      "id": 425658,
+      "question_type_id": 1,
+      "content": "<p><b id=\"docs-internal-guid-7dd945c3-7fff-544a-5334-5b1ef34eac04\">Vidal is solving the following problem:</b></p>\n\n<p><meta charset=\"utf-8\" /></p>\n\n<p><b id=\"docs-internal-guid-7dd945c3-7fff-544a-5334-5b1ef34eac04\">I have 37 blue cars, 14 green cars and 21 orange car. How many cars do I have in all?</b></p>\n\n<p dir=\"ltr\"><b id=\"docs-internal-guid-7dd945c3-7fff-544a-5334-5b1ef34eac04\">Vidal wrote the following equation to help his solve the problem: </b></p>\n\n<p dir=\"ltr\"><b id=\"docs-internal-guid-7dd945c3-7fff-544a-5334-5b1ef34eac04\">37 - 14 - 21 = ?. </b></p>\n\n<p><b id=\"docs-internal-guid-7dd945c3-7fff-544a-5334-5b1ef34eac04\">Is his equation correct? Why or why not?</b></p>\n",
+      "difficulty_level_id": 3,
+      "active": true,
+      "assigned_score": 30,
+      "choices": [
+        {
+          "id": 814279,
+          "question_id": 425658,
+          "content": "Answers will vary. ",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "id": 145631,
+      "question_type_id": 2,
+      "content": "<p><strong>Me and my two brothers got 5 cups each at an hotel. How many cups do we have in all?</strong></p><p><br></p>",
+      "difficulty_level_id": 1,
+      "active": true,
+      "assigned_score": 10,
+      "choices": [
+        {
+          "id": 196732,
+          "question_id": 145631,
+          "content": "<p><strong>4</strong></p>\n",
+          "selected": false
+        },
+        {
+          "id": 196733,
+          "question_id": 145631,
+          "content": "<p><meta charset=\"utf-8\" /><b id=\"docs-internal-guid-f1f9656b-7fff-a2c5-0f51-187b9857bde6\">8</b></p>\n",
+          "selected": false
+        },
+        {
+          "id": 196734,
+          "question_id": 145631,
+          "content": "<p><b>15</b></p>\n",
+          "selected": true
+        },
+        {
+          "id": 196735,
+          "question_id": 145631,
+          "content": "<p><b>12</b></p>\n",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "id": 45658,
+      "question_type_id": 1,
+      "content": "<p><b id=\"docs-internal-guid-7dd945c3-7fff-544a-5334-5b1ef34eac04\">Sheela is solving the following problem:</b></p>\n\n<p><meta charset=\"utf-8\" /></p>\n\n<p><b id=\"docs-internal-guid-7dd945c3-7fff-544a-5334-5b1ef34eac04\">I have 24 blue cars, 4 green cars and 15 orange car. How many cars do I have in all?</b></p>\n\n<p dir=\"ltr\"><b id=\"docs-internal-guid-7dd945c3-7fff-544a-5334-5b1ef34eac04\">Sheela wrote the following equation to help her solve the problem: </b></p>\n\n<p dir=\"ltr\"><b id=\"docs-internal-guid-7dd945c3-7fff-544a-5334-5b1ef34eac04\">24 - 4 - 15 = ?. </b></p>\n\n<p><b id=\"docs-internal-guid-7dd945c3-7fff-544a-5334-5b1ef34eac04\">Is her equation correct? Why or why not?</b></p>\n",
+      "difficulty_level_id": 2,
+      "active": true,
+      "assigned_score": 20,
+      "choices": [
+        {
+          "id": 85279,
+          "question_id": 45658,
+          "content": "Answers will vary. ",
+          "selected": true
+        }
+      ]
+    }
+  ]
+}
