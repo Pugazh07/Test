@@ -15,7 +15,11 @@ const TestReport =(props)=>{
         return total + ans.assigned_score
     }, 0)
     return<div>
-        <h1 style={{textAlign: 'center'}}>Your Score is {score}</h1>
+        <section style={{textAlign: 'center'}}>
+        <h1 >Your Score is {score}</h1>
+        <button onClick={props.retakeTest}>Retake</button>
+        </section>
+        
         <br/>
         <p>Questions that you have answered correctly are:</p>
         <h1>EASY</h1>

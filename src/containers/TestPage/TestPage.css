@@ -9,6 +9,7 @@ button{
     height: 60px;
     font-size: 30px;
     margin: 20px;
+    background-color: thistle;
 }
 
 .NextLevel, .PrevLevel{
