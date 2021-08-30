@@ -28,11 +28,11 @@ const TestPage = () =>{
     const [isSubmitted, setIsSubmitted]=useState(false)
 
     useEffect(()=>{
-        let url="http://localhost:8000:"
-        if(process.env.json_url){
-            url=""
+        let url="http://localhost:8000/"
+        if(process.env.NODE_ENV === 'production'){
+            url="https://test-15e18-default-rtdb.firebaseio.com/"
         }
-        axios.get(url+'/questions').then(result=>{
+        axios.get(url+'questions').then(result=>{
             setQuesFetchError(false)
             setQuestions(result.data)
         }).catch(error=>{
