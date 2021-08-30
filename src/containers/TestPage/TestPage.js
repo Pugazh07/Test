@@ -28,11 +28,11 @@ const TestPage = () =>{
     const [isSubmitted, setIsSubmitted]=useState(false)
 
     useEffect(()=>{
-        let url="http://localhost"
+        let url="http://localhost:8000:"
         if(process.env.json_url){
-            url=process.env.json_url
+            url=""
         }
-        axios.get(url+':8000/questions').then(result=>{
+        axios.get(url+'/questions').then(result=>{
             setQuesFetchError(false)
             setQuestions(result.data)
         }).catch(error=>{
