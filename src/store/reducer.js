@@ -1,8 +1,7 @@
 import * as actionTypes from './actions';
 
 const initialState={
-    questions: [],
-    // answerList: []
+    questions: []
 }
 
 const reducer =(state=initialState, action)=>{

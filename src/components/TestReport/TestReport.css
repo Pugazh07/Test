@@ -1,3 +1,7 @@
 .TestReport  p, .TestReport span p{
     display: inline;
 }
+
+.ReportButton{
+    width: max-content;
+}

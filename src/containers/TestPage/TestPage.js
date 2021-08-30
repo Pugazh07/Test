@@ -3,11 +3,12 @@ import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
 
 import QuestionList from '../../components/QuestionList/QuestionList';
-import TestReport from '../TestReport/TestReport';
+import TestReport from '../../components/TestReport/TestReport';
 import * as actionTypes from '../../store/actions';
 
 import './TestPage.css';
 import { DIFFICULTLEVEL } from '../../localConfig/quesConfig';
+import { useSessionStorage } from '../../components/CustomHooks';
 
 
 const TestPage = () =>{
@@ -21,15 +22,13 @@ const TestPage = () =>{
     })
 
     const [quesFetchError, setQuesFetchError]=useState(false)
-    const [difficultLevel, setDifficultLevel]=useState(()=>{
-        return sessionStorage.getItem('difficultLevel') ? JSON.parse(sessionStorage.getItem('difficultLevel')) : 1;
-    })
-    const [isSubmitted, setIsSubmitted]=useState(()=>{
-        return sessionStorage.getItem('isSubmitted') ? JSON.parse(sessionStorage.getItem('isSubmitted')) : false;
-    })
+    
+    const [difficultLevel, setDifficultLevel]=useSessionStorage('difficultLevel',1)
+
+    const [isSubmitted, setIsSubmitted]=useState(false)
 
     useEffect(()=>{
-        axios.get('http://localhost:3000/questions').then(result=>{
+        axios.get('http://localhost:8000/questions').then(result=>{
             setQuesFetchError(false)
             setQuestions(result.data)
         }).catch(error=>{
@@ -49,7 +48,7 @@ const TestPage = () =>{
     }
     const submitHandler=(e)=>{
         e.preventDefault();
-        sessionStorage.setItem('isSubmitted', JSON.stringify(true))
+        sessionStorage.setItem('questions',JSON.stringify(questions))
         setIsSubmitted(true)
     }
     // console.log(questions, quesFetchError, difficultLevel)
@@ -78,7 +77,7 @@ const TestPage = () =>{
 
     return <>
         {isSubmitted ? <TestReport retakeTest={()=>{
-            sessionStorage.setItem('isSubmitted', JSON.stringify(false))
+            setDifficultLevel(1)
             setIsSubmitted(false)
         }}/> : pageContent}
     </>

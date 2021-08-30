@@ -1,5 +1,6 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import {useSessionStorage} from '../CustomHooks';
 
 import { QUESTYPE } from '../../localConfig/quesConfig';
 import * as actionTypes from '../../store/actions'
@@ -13,9 +14,11 @@ const FreeTextQues = (props) =>{
         answer_id: answer_id,
         provided_answer: answer
     })
-    const [textValue, setTextValue]=useState(()=>{
+    /* const [textValue, setTextValue]=useState(()=>{
         return sessionStorage.getItem(props.question.id.toString() + props.question.difficulty_level_id.toString()) ? JSON.parse(sessionStorage.getItem(props.question.id.toString() + props.question.difficulty_level_id.toString())) : '';
-    })
+    }) */
+    const [textValue, setTextValue]=useSessionStorage(props.question.id.toString() + props.question.difficulty_level_id.toString(), '')
+    
     const [error, setError]=useState('')
 
     const textValueChangeHandler=(e, answer_id)=>{

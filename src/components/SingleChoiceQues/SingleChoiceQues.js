@@ -1,7 +1,8 @@
-import React,{useState} from 'react';
+import React from 'react';
 import { useDispatch } from 'react-redux';
 
 import * as actionTypes from '../../store/actions'
+import { useSessionStorage } from '../CustomHooks';
 import './SingleChoiceQues.css'
 
 const SingleChoiceQues =(props) =>{
@@ -13,12 +14,10 @@ const SingleChoiceQues =(props) =>{
         answer_id: answer_id,
         provided_answer: provided_answer
     })
-    const [selectedOption, setSelectedOption]=useState(()=>{
-        return sessionStorage.getItem(props.question.id) ? JSON.parse(sessionStorage.getItem(props.question.id)) : null;
-    })
+
+    const [selectedOption, setSelectedOption]=useSessionStorage(props.question.id, null)
 
     const optionSelectHandler = (e,id, answer) =>{
-        console.log(e.target)
         sessionStorage.setItem(props.question.id, JSON.stringify(id))
         setSelectedOption(id)
         updateAnswers(props.question.id, id, answer)
